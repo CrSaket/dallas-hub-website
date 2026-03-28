@@ -1,0 +1,102 @@
+<!--
+  =============================================
+  DALLAS HUB — SHARED COMPONENTS
+  _components.html
+
+  This file contains the reusable HTML snippets
+  that appear on every page. Copy the relevant
+  sections into your HTML files as needed, or
+  use a templating engine / include system.
+  =============================================
+-->
+
+
+<!-- =============================================
+     NAVBAR
+     Paste once, just inside <body>, before all pages.
+     ============================================= -->
+<div class="nav-outer">
+  <nav>
+    <a class="nav-brand" onclick="showPage('home')">
+      <img id="navLogo" class="nav-logo" src="" alt="Dallas Hub Cricket">
+    </a>
+    <ul class="nav-links">
+      <li><a onclick="showPage('home')">Home</a></li>
+      <li><a onclick="showPage('about')">About</a></li>
+      <li><a onclick="showPage('impact')">Impact</a></li>
+      <li><a onclick="showPage('programs')">Programs</a></li>
+      <li><a onclick="showPage('academies')">Academies</a></li>
+      <li><a onclick="showPage('team')">Leadership</a></li>
+      <li><a onclick="showPage('contact')" class="nav-cta">Contact Us</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" onclick="toggleMobile()">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a onclick="showPage('home');toggleMobile()">Home</a>
+  <a onclick="showPage('about');toggleMobile()">About</a>
+  <a onclick="showPage('impact');toggleMobile()">Impact</a>
+  <a onclick="showPage('programs');toggleMobile()">Programs</a>
+  <a onclick="showPage('academies');toggleMobile()">Academies</a>
+  <a onclick="showPage('team');toggleMobile()">Leadership</a>
+  <a onclick="showPage('contact');toggleMobile()">Contact Us</a>
+</div>
+
+
+<!-- =============================================
+     FOOTER
+     Paste at the bottom of each page div.
+     Replace the image IDs to be unique per page
+     (e.g. fLogoHome, fLogoAbout, etc.)
+     ============================================= -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <!-- Replace "fLogoXXX" with a unique ID per page -->
+        <img id="fLogoXXX" src="" class="footer-logo" alt="Dallas Hub">
+        <div class="footer-brand-name">Dallas Hub Cricket Association</div>
+        <p>The largest youth cricket association in North Texas, proudly serving our community as a registered nonprofit organization in partnership with USA Cricket.</p>
+        <span class="footer-nonprofit">501(c)(3) Nonprofit Organization</span>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a onclick="showPage('home')">Home</a></li>
+          <li><a onclick="showPage('about')">About</a></li>
+          <li><a onclick="showPage('impact')">Impact</a></li>
+          <li><a onclick="showPage('programs')">Programs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Organization</h4>
+        <ul>
+          <li><a onclick="showPage('academies')">Academies</a></li>
+          <li><a onclick="showPage('team')">Leadership</a></li>
+          <li><a onclick="showPage('contact')">Contact Us</a></li>
+          <li><a onclick="showPage('contact')">Donate</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a>Dallas, TX</a></li>
+          <li><a>info@dallashub.org</a></li>
+          <li><a>USA Cricket Affiliated</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Dallas Hub Cricket Association. All rights reserved. A registered 501(c)(3) nonprofit organization.</p>
+      <div class="footer-usa-logo">
+        <!-- Replace "fUsaXXX" with a unique ID per page -->
+        <img id="fUsaXXX" src="" alt="USA Cricket">
+        <span>USA Cricket Affiliated Hub</span>
+      </div>
+    </div>
+  </div>
+</footer>
