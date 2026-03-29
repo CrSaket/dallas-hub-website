@@ -19,7 +19,7 @@ const Navbar = ({ currentPage, showPage }) => {
             <li><a onClick={() => showPage('about')} className={currentPage === 'about' ? 'active' : ''}>About</a></li>
             <li><a onClick={() => showPage('impact')} className={currentPage === 'impact' ? 'active' : ''}>Impact</a></li>
             <li><a onClick={() => showPage('team')} className={currentPage === 'team' ? 'active' : ''}>Leadership</a></li>
-            <li><a onClick={() => showPage('contact')} className={currentPage === 'contact' ? 'active nav-cta' : 'nav-cta'}>Contact Us</a></li>
+            <li><a onClick={() => showPage('contact')} className="nav-cta">Contact Us</a></li>
           </ul>
           <button className="hamburger" onClick={toggleMobile}>
             <span></span><span></span><span></span>

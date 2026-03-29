@@ -1,18 +1,10 @@
 import React from 'react';
+import { BackgroundPaths } from '@/components/ui/background-paths';
 
 const HomePage = ({ showPage }) => {
   return (
     <div className="page active">
-      <div className="stripe-hero">
-        <div className="s-lines"></div>
-        <div className="s-diag"></div>
-        <div className="s-radial"></div>
-        <div className="stripe-hero-inner">
-          <div className="section-label" style={{color: 'rgba(255,255,255,0.58)'}}>North Texas</div>
-          <h1>Dallas Hub</h1>
-          <p>The largest youth cricket association in North Texas.</p>
-        </div>
-      </div>
+      <BackgroundPaths title="Dallas Hub Cricket" onCtaClick={() => showPage('contact')} />
 
       <div style={{background: 'var(--light)', padding: '56px 40px', textAlign: 'center'}}>
         <div className="section-label" style={{textAlign: 'center'}}>Get Started</div>
