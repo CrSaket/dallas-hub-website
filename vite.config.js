@@ -6,12 +6,12 @@ export default defineConfig({
   root: '.',
   build: {
     rollupOptions: {
-      input: './index-react.html'
+      input: './index.html'
     }
   },
   server: {
     port: 3000,
-    open: '/index-react.html'
+    open: '/index.html'
   },
   resolve: {
     alias: {
