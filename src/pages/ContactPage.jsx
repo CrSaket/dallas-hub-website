@@ -68,7 +68,7 @@ const ContactPage = ({ showPage }) => {
             </div>
             <div className="contact-item-text">
               <h4>Email</h4>
-              <a href={`mailto:${CONTACT_EMAIL}`} style={{ color: 'inherit', textDecoration: 'none' }}>{CONTACT_EMAIL}</a>
+              <a href="mailto:secretary@usacricketdallas.org" style={{ color: 'inherit', textDecoration: 'none' }}>secretary@usacricketdallas.org</a>
             </div>
           </div>
         </div>
